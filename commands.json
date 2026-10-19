@@ -1,0 +1,226 @@
+[
+  {
+    "title": "Update package list",
+    "desc": "Refresh the list of available packages. Do this first before installing anything.",
+    "cmd": "pkg update && pkg upgrade -y",
+    "tags": ["termux"],
+    "keywords": ["update", "upgrade", "refresh", "packages", "apt"]
+  },
+  {
+    "title": "Update system (Linux)",
+    "desc": "Update all installed packages on Debian/Ubuntu based Linux.",
+    "cmd": "sudo apt update && sudo apt upgrade -y",
+    "tags": ["linux"],
+    "keywords": ["update", "upgrade", "system", "apt", "debian", "ubuntu"]
+  },
+  {
+    "title": "Install a package",
+    "desc": "Install any app or tool. Replace 'package-name' with the real name.",
+    "cmd": "pkg install package-name",
+    "tags": ["termux"],
+    "keywords": ["install", "add", "app", "package", "setup"]
+  },
+  {
+    "title": "Install a package (Linux)",
+    "desc": "Install a package on Debian/Ubuntu systems.",
+    "cmd": "sudo apt install package-name",
+    "tags": ["linux"],
+    "keywords": ["install", "add", "app", "package", "debian", "ubuntu"]
+  },
+  {
+    "title": "See files in current folder",
+    "desc": "Lists all files and folders in the folder you're currently inside.",
+    "cmd": "ls -la",
+    "tags": ["linux", "termux"],
+    "keywords": ["list", "files", "folder", "show", "see", "directory", "contents"]
+  },
+  {
+    "title": "Go into a folder",
+    "desc": "Change directory into another folder. Replace 'folder-name'.",
+    "cmd": "cd folder-name",
+    "tags": ["linux", "termux"],
+    "keywords": ["go", "change", "folder", "directory", "navigate", "cd"]
+  },
+  {
+    "title": "Go back one folder",
+    "desc": "Move up one level in the folder tree.",
+    "cmd": "cd ..",
+    "tags": ["linux", "termux"],
+    "keywords": ["back", "up", "parent", "folder", "previous"]
+  },
+  {
+    "title": "Where am I?",
+    "desc": "Shows the full path of the folder you're currently in.",
+    "cmd": "pwd",
+    "tags": ["linux", "termux"],
+    "keywords": ["where", "location", "path", "current", "folder"]
+  },
+  {
+    "title": "Create an empty file",
+    "desc": "Makes a new empty text file with the name you give.",
+    "cmd": "touch filename.txt",
+    "tags": ["linux", "termux"],
+    "keywords": ["create", "new", "file", "make", "empty"]
+  },
+  {
+    "title": "Create a folder",
+    "desc": "Makes a new folder (directory).",
+    "cmd": "mkdir new-folder",
+    "tags": ["linux", "termux"],
+    "keywords": ["create", "new", "folder", "directory", "make"]
+  },
+  {
+    "title": "Delete a file",
+    "desc": "Permanently removes a file. ⚠️ Cannot be undone!",
+    "cmd": "rm filename.txt",
+    "tags": ["linux", "termux"],
+    "keywords": ["delete", "remove", "file", "erase", "rm"]
+  },
+  {
+    "title": "Delete a folder",
+    "desc": "Removes a folder and everything inside it. ⚠️ Dangerous!",
+    "cmd": "rm -rf folder-name",
+    "tags": ["linux", "termux"],
+    "keywords": ["delete", "remove", "folder", "directory", "erase"]
+  },
+  {
+    "title": "Copy a file",
+    "desc": "Copies a file from one place to another.",
+    "cmd": "cp source.txt destination.txt",
+    "tags": ["linux", "termux"],
+    "keywords": ["copy", "duplicate", "file", "cp"]
+  },
+  {
+    "title": "Move / Rename a file",
+    "desc": "Moves a file or renames it.",
+    "cmd": "mv oldname.txt newname.txt",
+    "tags": ["linux", "termux"],
+    "keywords": ["move", "rename", "file", "mv"]
+  },
+  {
+    "title": "Read a text file",
+    "desc": "Shows the contents of a text file in the terminal.",
+    "cmd": "cat filename.txt",
+    "tags": ["linux", "termux"],
+    "keywords": ["read", "view", "show", "file", "contents", "text", "cat"]
+  },
+  {
+    "title": "Edit a file",
+    "desc": "Open a file in the nano text editor. Ctrl+O to save, Ctrl+X to exit.",
+    "cmd": "nano filename.txt",
+    "tags": ["linux", "termux"],
+    "keywords": ["edit", "open", "modify", "file", "nano", "text"]
+  },
+  {
+    "title": "Search inside files",
+    "desc": "Find a word inside files in the current folder.",
+    "cmd": "grep -r \"search-word\" .",
+    "tags": ["linux", "termux"],
+    "keywords": ["search", "find", "word", "text", "inside", "grep"]
+  },
+  {
+    "title": "Check disk space",
+    "desc": "Shows how much storage is used and free.",
+    "cmd": "df -h",
+    "tags": ["linux", "termux"],
+    "keywords": ["disk", "space", "storage", "free", "usage", "memory"]
+  },
+  {
+    "title": "Check running processes",
+    "desc": "Shows all currently running processes and their CPU/memory usage.",
+    "cmd": "top",
+    "tags": ["linux", "termux"],
+    "keywords": ["process", "running", "cpu", "memory", "task", "top"]
+  },
+  {
+    "title": "Kill a process",
+    "desc": "Stops a running process. Get the PID from 'top' first.",
+    "cmd": "kill -9 PID",
+    "tags": ["linux", "termux"],
+    "keywords": ["kill", "stop", "process", "terminate", "end", "pid"]
+  },
+  {
+    "title": "Check internet connection",
+    "desc": "Pings Google to test if you're online.",
+    "cmd": "ping -c 4 google.com",
+    "tags": ["linux", "termux"],
+    "keywords": ["internet", "connection", "network", "online", "ping", "test"]
+  },
+  {
+    "title": "Download a file",
+    "desc": "Downloads a file from a URL to your current folder.",
+    "cmd": "curl -O https://example.com/file.zip",
+    "tags": ["linux", "termux"],
+    "keywords": ["download", "fetch", "get", "url", "curl", "wget"]
+  },
+  {
+    "title": "Install Git",
+    "desc": "Installs Git so you can clone GitHub repos.",
+    "cmd": "pkg install git",
+    "tags": ["termux"],
+    "keywords": ["install", "git", "github", "clone", "version"]
+  },
+  {
+    "title": "Clone a GitHub repo",
+    "desc": "Downloads a GitHub repository to your device.",
+    "cmd": "git clone https://github.com/username/repo.git",
+    "tags": ["linux", "termux"],
+    "keywords": ["clone", "github", "download", "repo", "git", "copy"]
+  },
+  {
+    "title": "Clear the terminal",
+    "desc": "Clears all the text on your terminal screen.",
+    "cmd": "clear",
+    "tags": ["linux", "termux"],
+    "keywords": ["clear", "clean", "terminal", "screen", "reset"]
+  },
+  {
+    "title": "Show command history",
+    "desc": "Shows all commands you've typed before.",
+    "cmd": "history",
+    "tags": ["linux", "termux"],
+    "keywords": ["history", "past", "previous", "commands", "used"]
+  },
+  {
+    "title": "Get help for any command",
+    "desc": "Shows the manual/help page for any command.",
+    "cmd": "man command-name",
+    "tags": ["linux", "termux"],
+    "keywords": ["help", "manual", "info", "learn", "how", "man"]
+  },
+  {
+    "title": "Change file permissions",
+    "desc": "Makes a file executable (e.g. a script).",
+    "cmd": "chmod +x script.sh",
+    "tags": ["linux", "termux"],
+    "keywords": ["permission", "execute", "chmod", "make", "run", "script"]
+  },
+  {
+    "title": "Run a script",
+    "desc": "Executes a shell script file.",
+    "cmd": "bash script.sh",
+    "tags": ["linux", "termux"],
+    "keywords": ["run", "execute", "script", "bash", "sh"]
+  },
+  {
+    "title": "Show current date and time",
+    "desc": "Displays the system date and time.",
+    "cmd": "date",
+    "tags": ["linux", "termux"],
+    "keywords": ["date", "time", "clock", "now", "today"]
+  },
+  {
+    "title": "Show system info",
+    "desc": "Shows OS, kernel, and hardware information.",
+    "cmd": "uname -a",
+    "tags": ["linux", "termux"],
+    "keywords": ["system", "info", "os", "kernel", "version", "uname"]
+  },
+  {
+    "title": "Exit Termux",
+    "desc": "Closes the current Termux session.",
+    "cmd": "exit",
+    "tags": ["termux"],
+    "keywords": ["exit", "close", "quit", "leave", "end"]
+  }
+]
